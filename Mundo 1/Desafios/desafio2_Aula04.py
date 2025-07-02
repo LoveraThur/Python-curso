@@ -1,0 +1,5 @@
+print('Me diga, quando você nasceu?')
+dia=input('Dia: ')
+mes=input('mês: ')
+ano=input('Ano: ')
+print('Legal! Você nasceu em\033[4;31m',dia,'\033[mde\033[4;31m',mes,'\033[mde\033[4;031m',ano,)
