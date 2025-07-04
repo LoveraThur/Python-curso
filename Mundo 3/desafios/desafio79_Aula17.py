@@ -5,8 +5,7 @@ print('LISTA DE VALORES UNICOS')
 print('=-'*30)
 
 lista = []
-continuar = 's'
-while continuar != 'N':
+while True:
     valor = int(input('Digite um valor: '))
     if valor in lista:
         print('Ops, este valor ja está na lista')
@@ -14,12 +13,14 @@ while continuar != 'N':
     else:
         print('Valor adicionado na lista com \033[32msucesso\033[m')
         lista.append(valor)
-    continuar = str(input('Você deseja continuar? ')).upper()
 
-    if continuar == 'N':
-        break
+    continuar = 's'
     while continuar != 'S':
         continuar = str(input('Você deseja continuar? ')).upper()
+        if continuar == 'N':
+            break
+    if continuar == 'N':
+        break
         
     print('=-'*30)
     
