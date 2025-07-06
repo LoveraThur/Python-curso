@@ -1,13 +1,11 @@
 #Crie um programa onde o usuário digite uma expressão qualquer que use parênteses. Seu aplicativo deverá analisar se a expressão passada está com os parênteses abertos e fechados na ordem correta
 
 lista = []
-
 expressão = str(input('Digite uma expressão(sem números. Use parênteses!): '))
-
-for simbolo in expressão:
-    if simbolo == '(':
+for parenteses in expressão:
+    if parenteses == '(':
         lista.append('(')
-    elif simbolo == ')':
+    elif parenteses == ')':
         if len(lista) > 0:
             lista.pop()
         else:
@@ -15,4 +13,8 @@ for simbolo in expressão:
 if len(lista) == 0:
     print('Expressão válida!')
 else:
+<<<<<<< HEAD
     print('Expressão inválida')    
+=======
+    print('Expressão inválida') 
+>>>>>>> d0f19808b7e9060b41f6facda249018fbccd2f49
