@@ -16,5 +16,3 @@ if len(lista) == 0:
     print('Expressão válida!')
 else:
     print('Expressão inválida')    
-
-print(lista)
