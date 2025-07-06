@@ -13,8 +13,4 @@ for parenteses in expressão:
 if len(lista) == 0:
     print('Expressão válida!')
 else:
-<<<<<<< HEAD
-    print('Expressão inválida')    
-=======
     print('Expressão inválida') 
->>>>>>> d0f19808b7e9060b41f6facda249018fbccd2f49
