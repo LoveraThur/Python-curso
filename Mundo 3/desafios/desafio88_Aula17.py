@@ -16,10 +16,9 @@ print('=-'*3)
 for jogo in range(mega_senas):
     for a in range(6):
         numero = (randint(0,61))
-        if numero in lista:
+        while numero in lista:
             numero = (randint(0,61))
         lista.append(numero)
-
         jogos = lista[:]
     lista.clear()
     print(f'Jogo {jogo+1}: {sorted(jogos)}')
