@@ -9,10 +9,11 @@ dicionario['nome'] = str(input('Nome: '))
 nascimento = int(input('Ano de nascimento: '))
 dicionario['idade'] = data_atual - nascimento
 dicionario['ctps'] = int(input('carteira de trabalho(0 não tem): '))
-contratado = int(input('Ano de contratação: '))
-dicionario['ano contratado'] = contratado
-dicionario['salario'] = int(input('Salário: R$ '))
-dicionario['aposentadoria'] = -((data_atual - contratado) - 35)+dicionario['idade']
+if dicionario['ctps'] > 0:
+    contratado = int(input('Ano de contratação: '))
+    dicionario['ano contratado'] = contratado
+    dicionario['salario'] = int(input('Salário: R$ '))
+    dicionario['aposentadoria'] = -((data_atual - contratado) - 35)+dicionario['idade']
 
 print('-='*25)
 for k,v in dicionario.items():
@@ -21,7 +22,7 @@ for k,v in dicionario.items():
     elif k == 'idade':
         print(f'Você tem {v} anos de {k}')
     elif k == 'ctps':
-        print(f'seu {k} é {v}')
+        print(f'seu {k} é de {v}')
     elif k == 'ano contratado':
         print(f'você foi contratado em {v}')
     elif k == 'salario':
