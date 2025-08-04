@@ -8,7 +8,7 @@ temporada['nome'] = str(input('Nome do Jogador: '))
 partidas = int(input(f'Quantas partidas {temporada['nome']} jogou? '))
 
 for partida in range(partidas):
-    gol_partida.append(int(input(f'Quantos gols na {partida + 1}º partida? '))) 
+    gol_partida.append(int(input(f'Quantos gols na {partida }º partida? '))) 
 temporada['gols'] = gol_partida
 temporada['gols temp'] = sum(gol_partida)
 
@@ -23,5 +23,5 @@ print('=-'*30)
 print(f'O jogador {temporada["nome"]} jogou {partidas} partidas na temporada')
 
 for partida, gols in enumerate(gol_partida):
-    print(f'   => Na partida {partida +1}, fez {gols} gols')
+    print(f'   => Na partida {partida }, fez {gols} gols')
 print(f'Marcando um total de {temporada["gols temp"]} gols na temporada')
