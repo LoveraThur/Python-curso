@@ -35,4 +35,4 @@ for linha in range(0,3):
 print('=-'*25)
 print(f'A soma dos valores pares desta matriz é: {par}')
 print(f'A soma dos valores da 3º coluna é: {coluna3}')
-print(f'O maior valorr da 2º linha é {maior_valor}')
+print(f'O maior valor da 2º linha é {maior_valor}')
