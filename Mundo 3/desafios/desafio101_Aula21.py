@@ -2,8 +2,8 @@
 
 def voto(nascimento):
     from datetime import date
-    data_atual = date.today()
-    idade = data_atual.year - nascimento
+    data_atual = date.today().year
+    idade = data_atual - nascimento
 
     if idade < 16:
         return f'Com {idade} anos: VOTO NEGADO'

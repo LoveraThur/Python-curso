@@ -4,10 +4,11 @@ def somar(a=0, b=0, c=0):
     parametro a: primeiro valor
     parametro b: segundo valor
     parametro c: terceiro valor
+
     Função criada por Arthur Albara Lovera
     """
     s= a+b+c
-    print(s)
+    print(f'A soma vale {s}')
 
 somar(3,2,5)
 somar(8,4)
