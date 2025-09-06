@@ -8,7 +8,7 @@ def LeiaInt(msg):
             print('\033[31mERRO! Digite um número inteiro válido\033[m')
             
         except(KeyboardInterrupt):
-            print('\n\033[31mEntrada de dados interrompida pelo usuário\033[m')
+            print('\n\033[31mO usuário preferiu não informar o número\033[m')
             return 0
         else:    
             return n
@@ -20,7 +20,7 @@ def LeiaFloat(msg):
         except (ValueError, TypeError):
             print('\033[31mERRO! Digite um número real válido\033[m')
         except(KeyboardInterrupt):
-            print('\n\033[31mEntrada de dados interrompida pelo usuário\033[m')
+            print('\n\033[31mO usuário preferiu não informar o número\033[m')
             return 0
         else:    
             return n
