@@ -3,6 +3,7 @@ import requests
 
 try:
     r= requests.get('https://www.pudim.com.br/')
-    print('\033[33mO site pudim está acessivel\033[m')
 except:
-    print('\033[31mO site pudim está inacessivel\033[m')
+    print('\033[31mO site Pudim está inacessivel\033[m')
+else:
+    print('\033[33mO site Pudim está acessivel\033[m')
