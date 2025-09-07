@@ -11,11 +11,23 @@ if not arquivoExiste(arquivo):
 while True:
     resposta = menu(['Ver pessoas Cadastradas', 'Cadastrar nova Pessoa', 'Sair do sistema'])
 
+    nome = ''
     if resposta == 1:
         lerArquivo(arquivo)
     elif resposta == 2:
         cabecalho('NOVO CADASTRO')
-        nome = str(input('Nome: ')).title()
+        while True:
+            try:
+                while not nome.strip():
+                    nome = str(input('Nome: ')).title()
+                    if not nome.strip():
+                        print('\033[31mDigite um nome válido\033[m')
+                    else:
+                        continue
+            except:
+                print('ERRO! Digite um nome válido')
+            else:
+                break
         idade = LeiaInt('Idade: ')
         cadastrar(arquivo, nome, idade)
     elif resposta == 3:

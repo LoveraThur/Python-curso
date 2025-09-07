@@ -32,7 +32,9 @@ def lerArquivo(nome):
     finally:
         a.close()
         
-def cadastrar(arq, nome='desconhecido', idade =0):
+def cadastrar(arq, nome, idade =0):
+    if nome == ' ':
+        nome = 'desconhecido'
     try:
         a = open(arq, 'at')
     except:
