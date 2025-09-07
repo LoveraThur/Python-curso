@@ -11,36 +11,11 @@ def LeiaInt(msg):
         else:    
             return n
 
-def cadastrar():
-    cabecalho('NOVO CADASTRO')
-    while True:
-        try:    
-            nome = str(input('Nome: ')).title()
-            if nome.isnumeric():
-                print('\033[31mERRO! Digite um nome válido\033[m')
-            elif len(nome) >= 8: 
-                break
-            else:
-                print('\033[31mDigite seu nome completo\033[m')
-        except:
-            print('\n\033[31mERRO! Digite um nome válido\033[m')
-    while True:
-        try:    
-            idade = int(input('idade: '))
-        except (KeyboardInterrupt):
-            print('\n\033[31mERRO! Não existe esta idade\033[m')
-        except:
-            print('\033[31mERRO! Não existe esta idade\033[m')
-        else:
-            print(f'{nome} foi cadastrado(a)')
-            break
 def risco(tam = 42):
     return '-' * tam
 
 def cadastro():
-    risco()
-    print('PESSOAS CADASTRADAS'.center(42))
-    risco()
+    cabecalho('PESSOAS CADASTRADAS')
 
 def cabecalho(txt):
     print(risco())
