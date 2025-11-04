@@ -3,17 +3,17 @@
 #-Á vista no cartão: 5% de desconto
 #-Em até 2x no cartão: Preço normal
 #-3x ou mais no cartão: 20% de juros
-print('=-'*35)
+print('=-'*30)
 
 valor= float(input('Valor do produto: R$'))
 
-print('=-'*35)
+print('=-'*30)
 print('Escolha uma das opções')
 print('|1- À vista dinheiro ou cheque >>> 10% desconto   |')
 print('|2- À vista no cartão          >>> 5% desconto    |')
 print('|3- 2x no Cartão               >>> Preço normal   |')
 print('|4- 3x ou mais no cartão       >>> 20% de Juros   |')
-print('=-'*35)
+print('=-'*30)
 
 opcao= int(input('Qual opção deseja: '))
 
@@ -43,5 +43,5 @@ elif opcao == 4:
 else:
     print('Esta opção não existe!')
 
-print('=-'*35)
+print('=-'*30)
 
