@@ -1,4 +1,4 @@
-#crie um programa que leia 2 valores e mostre na tela um menu: 1- soma, 2- multiplicação, 3-maior, 4- novos numeros, 5- sair
+#crie um programa que leia 2 valores e mostre na tela um menu: 1- soma, 2- multiplicação, 3-maior, 4- novos numeros, 5- sai
 
 menu = 0
 
